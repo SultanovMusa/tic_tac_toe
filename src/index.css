@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+  --color-default: #fff;
+}
+@media (prefers-color-scheme: dark){
+	:root{
+		--color-default: white;
+	}
+}
+[data-theme='dark'] {
+  --color-default: green;
+}
+[data-theme='black'] {
+  --color-default: black;
+}
+[data-theme='🌸'] {
+  --color-default: red;
+}
+[data-theme='🐬'] {
+  --color-default: blue;
+}
+[data-theme='🐤'] {
+  --color-default: yellow;
+}
+body {
+  background-color: var(--color-default) !important;
+}
+
